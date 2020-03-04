@@ -1,0 +1,17 @@
+curl localhost:8762/api/notes/ -v -u joshua@bloch.com:developer
+
+curl -X POST localhost:8762/api/notes/ -v -u joshua@bloch.com:developer -H "Content-Type: application/json" -d "{ \"tittle\" : \"Coronavirus\", \"note\" : \"We found the vaccine\" }"
+curl -X POST localhost:8762/api/notes/ -v -u joshua@bloch.com:developer -H "Content-Type: application/json" -d "{ \"tittle\" : \"Test tittle\", \"note\" : \"Test note\" }"
+
+curl localhost:8762/api/notes/ -v -u joshua@bloch.com:developer
+
+curl localhost:8762/api/notes/1 -v -u joshua@bloch.com:developer
+curl localhost:8762/api/notes/2 -v -u joshua@bloch.com:developer
+
+curl -X DELETE localhost:8762/api/notes/1 -v -u joshua@bloch.com:developer
+
+curl localhost:8762/api/notes/ -v -u joshua@bloch.com:developer
+
+curl -X PUT localhost:8762/api/notes/2 -v -u joshua@bloch.com:developer -H "Content-Type: application/json" -d "{ \"tittle\" : \"Coronavirus\", \"note\" : \"We found the vaccine\" }"
+
+curl localhost:8762/api/notes/ -v -u joshua@bloch.com:developer
